@@ -1,5 +1,5 @@
 dependencies:
-  alexa-bot-api: 0.1.2
+  alexa-bot-api: 0.0.9
   discord.js: 12.2.0
   express: 4.17.1
 packages:
@@ -34,15 +34,14 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-Il80Qs2WjYlJIBNzNkK6KYqlVMTbZLXgHx2oT0pU/fjRHyEp+PEfEPY0R3WCwAGVOtauxh1hOxNgIf5bv7dQpA==
-  /alexa-bot-api/0.1.2:
+  /alexa-bot-api/0.0.9:
     dependencies:
-      md5: 2.2.1
-      superagent: 5.3.1
+      cleverbot-free: 1.0.4
     dev: false
     engines:
       node: '>=0.12'
     resolution:
-      integrity: sha512-vnrn+YhBzV1KT88KAKn9AHiJ65oTfwzzONP5fAegxOgKjG/6eRoIvMuFCJx908tN8WSDxVY+tjafjMwUNtaKfw==
+      integrity: sha512-8mmmEL6r0uFYKD/nD6oYnpS6ztjvCnVoQaK1E4fT8F7SgqvsUeYBb0FbD1UeRdUyknc7WC+OCD2LTluvI/y64g==
   /array-flatten/1.1.1:
     dev: false
     resolution:
@@ -78,6 +77,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
+  /cleverbot-free/1.0.4:
+    dependencies:
+      md5: 2.2.1
+      superagent: 5.3.1
+    dev: false
+    resolution:
+      integrity: sha512-euJ6M3AwHFMczNP5uN2VbB6lqHynYBn7zJyrPwSpcorN6bSkGslJ4McPwOAuATfawOqZbR59GfBE7UyR0kZTkQ==
   /combined-stream/1.0.8:
     dependencies:
       delayed-stream: 1.0.0
@@ -636,6 +642,6 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  alexa-bot-api: ^0.1.1
+  alexa-bot-api: ^0.0.9
   discord.js: ^12.2.0
   express: ^4.17.1
