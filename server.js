@@ -7,7 +7,8 @@ client.on('ready', () => {
 });
 
 client.on('message', async message => {
-  let content = message.content
-  
-})
-          
+  if(message.author.bot) return;
+  let content = message.content;
+  chatbot.getReply(content).then(r => message.channel.send(r))
+});
+client.login(process.env.TOKEN)
