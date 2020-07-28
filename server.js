@@ -11,4 +11,3 @@ client.on("message", async message => {
   chatbot.getReply(content).then(r => message.channel.send(r));
 });
 client.login(process.env.TOKEN);
- const dis
