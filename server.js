@@ -1,13 +1,20 @@
 const discord = require("discord.js");
 const client = new discord.Client();
 const alexa = require("alexa-bot-api");
-var chatbot = new alexa("aw2plm"); //free access key for Mewtwo Machine channel (provided by CTK WARRIOR)
+var chatbot = ; //free access key for ZeroSync channel
 client.on("ready", () => {
   console.log("Ready for chatting!| Bot by 0_0");
 });
 client.on("message", async message => {
-  if (message.author.bot) return;
-  let content = message.content;
-  chatbot.getReply(content).then(r => message.channel.send(r));
+  // when client detects a message
+  if (message.author.bot) return; // if the author of the message is a bot ignore the case
+  let content = message.content; // let content ( a variable used to fetch response ) be equal to the message's content
+  chatbot.getReply(content).then(response =>
+    message.channel.send(`${message.author}`, {
+      embed: {
+        description: `${response}`
+      }
+    })
+  ); //get chatbot's reply
 });
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN); //login using the token 

@@ -1,4 +1,7 @@
-**This chatbot was created by 0_0#6666**
+# Updated 2nd April, 2021 
+## Update Logs 
+### • Bot Now Sends Response In Embeds 
+**This chatbot was created by 0_0#6666** \n
 _To set up your bot please head to .env and make a variable named TOKEN and add your tokrn there!
 **This bot is fully customisable join https://discord.gg/8HKHXbz for support and other questions**
 
