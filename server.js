@@ -1,7 +1,7 @@
 const discord = require("discord.js");
 const client = new discord.Client();
 const alexa = require("alexa-bot-api");
-var chatbot = new alexa(); //free access key for ZeroSync channel
+var chatbot = new alexa(); // Setting up the client 
 client.on("ready", () => {
   console.log("Ready for chatting!| Bot by 0_0");
 });
