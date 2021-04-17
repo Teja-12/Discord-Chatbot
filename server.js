@@ -1,5 +1,7 @@
 const discord = require("discord.js");
-const client = new discord.Client();
+const client = new discord.Client({
+  ws: { intents: ["GUILDS", "GUILD_MESSAGES"] }
+});
 const smartestchatbot = require("smartestchatbot");
 var x = new smartestchatbot.Client();
 client.on("ready", () => {
