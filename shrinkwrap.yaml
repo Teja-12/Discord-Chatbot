@@ -1,6 +1,5 @@
 dependencies:
-  discord-reply: 0.1.2
-  discord.js: 12.5.2
+  discord.js: github.com/discordjs/discord.js/1be67b88516b104073e46574a180498bad2aa02b
   smartestchatbot: 1.0.5
 packages:
   /@discordjs/collection/0.1.6:
@@ -165,42 +164,6 @@ packages:
       node: '>=0.4.0'
     resolution:
       integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
-  /discord-reply/0.1.2:
-    dependencies:
-      discord.js: 12.5.3
-    dev: false
-    resolution:
-      integrity: sha512-4XAFjJrhrmxsnDSPOQPqtjH534tx92KNFOW1uGZvxlKnPHcdCvbkrd8U/9vm/JQl5xDcbQQFUNoXs2k8kC8BKg==
-  /discord.js/12.5.2:
-    dependencies:
-      '@discordjs/collection': 0.1.6
-      '@discordjs/form-data': 3.0.1
-      abort-controller: 3.0.0
-      node-fetch: 2.6.1
-      prism-media: 1.2.9
-      setimmediate: 1.0.5
-      tweetnacl: 1.0.3
-      ws: 7.4.4
-    dev: false
-    engines:
-      node: '>=12.0.0'
-    resolution:
-      integrity: sha512-PAJv2azCHZNz5VlSOcEYS3SPBmYvka0WHlWhTlHgorfJVRcm1xPwYFqPeU+8+YsWlUxkfgGUD2bnNkVx6vIqPw==
-  /discord.js/12.5.3:
-    dependencies:
-      '@discordjs/collection': 0.1.6
-      '@discordjs/form-data': 3.0.1
-      abort-controller: 3.0.0
-      node-fetch: 2.6.1
-      prism-media: 1.2.9
-      setimmediate: 1.0.5
-      tweetnacl: 1.0.3
-      ws: 7.4.4
-    dev: false
-    engines:
-      node: '>=12.0.0'
-    resolution:
-      integrity: sha512-D3nkOa/pCkNyn6jLZnAiJApw2N9XrIsXUAdThf01i7yrEuqUmDGc7/CexVWwEcgbQR97XQ+mcnqJpmJ/92B4Aw==
   /end-of-stream/1.4.4:
     dependencies:
       once: 1.4.0
@@ -470,10 +433,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==
-  /setimmediate/1.0.5:
-    dev: false
-    resolution:
-      integrity: sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
   /side-channel/1.0.4:
     dependencies:
       call-bind: 1.0.2
@@ -540,10 +499,25 @@ packages:
     dev: false
     resolution:
       integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
+  github.com/discordjs/discord.js/1be67b88516b104073e46574a180498bad2aa02b:
+    dependencies:
+      '@discordjs/collection': 0.1.6
+      '@discordjs/form-data': 3.0.1
+      abort-controller: 3.0.0
+      node-fetch: 2.6.1
+      prism-media: 1.2.9
+      tweetnacl: 1.0.3
+      ws: 7.4.4
+    dev: false
+    engines:
+      node: '>=14.0.0'
+    name: discord.js
+    resolution:
+      tarball: 'https://codeload.github.com/discordjs/discord.js/tar.gz/1be67b88516b104073e46574a180498bad2aa02b'
+    version: 12.5.0
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  discord-reply: ^0.1.0
-  discord.js: ^12.5.2
+  discord.js: 'github:discordjs/discord.js'
   smartestchatbot: ^1.0.5

@@ -1,5 +1,4 @@
 const discord = require("discord.js");
-require("discord-reply");
 const client = new discord.Client();
 const smartestchatbot = require("smartestchatbot");
 var x = new smartestchatbot.Client();
@@ -29,7 +28,7 @@ client.on("message", async message => {
     user: message.author.id,
     language: "auto"
   }).then(reply => {
-    message.channel.send(`> ${reply}`);
+    message.channel.send(`${reply}`);
   });
   message.channel.stopTyping();
 });
