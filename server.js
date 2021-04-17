@@ -1,9 +1,7 @@
-const discord = require("discord.js");
-const client = new discord.Client({
-  ws: { intents: ["GUILDS", "GUILD_MESSAGES"] }
-});
+const { Client } = require("discord.js");
+const client = new Client({ intents: 23040 });
 const smartestchatbot = require("smartestchatbot");
-var x = new smartestchatbot.Client();
+var x = new smartestchatbot.Client()
 client.on("ready", () => {
   console.log("Ready for chatting!| Bot by 0_0");
 });
@@ -30,7 +28,7 @@ client.on("message", async message => {
     user: message.author.id,
     language: "auto"
   }).then(reply => {
-    message.channel.send(`${reply}`);
+    message.reply(`${reply}`);
   });
   message.channel.stopTyping();
 });
