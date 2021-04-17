@@ -1,9 +1,6 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
-  "version": "0.0.1",
+  "name": "chatbot",
+  "version": "1.0.0",
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
   "scripts": {
@@ -11,7 +8,8 @@
   },
   "dependencies": {
     "discord.js": "^12.5.2",
-    "alexa-bot-api": "^0.2.1"
+    "smartestchatbot": "^1.0.5",
+    "discord-reply": "^0.1.0"
   },
   "engines": {
     "node": "12.x"
