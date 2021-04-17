@@ -1,20 +1,23 @@
 const { Client } = require("discord.js");
-const client = new Client({ intents: 23040 });
+var d = new Date(),
+  dformat =
+    [d.getMonth() + 1, d.getDate(), d.getFullYear()].join("/") +
+    " " +
+    [d.getHours(), d.getMinutes(), d.getSeconds()].join(":");
+const client = new Client({ intents: 513 });
 const smartestchatbot = require("smartestchatbot");
-var x = new smartestchatbot.Client()
+var x = new smartestchatbot.Client();
 client.on("ready", () => {
   console.log("Ready for chatting!| Bot by 0_0");
 });
 client.on("message", async message => {
   // when client detects a message
   if (message.author.bot) return; // if the author of the message is a bot ignore the case
-  let content = message.content; // let content ( a variable used to fetch response ) be equal to the message's content
-  if (message.author.bot) return;
-  message.content = message.content
+  message.content = message.content // let content ( a variable used to fetch response ) be equal to the message's content
     .replace(/@(everyone)/gi, "everyone")
     .replace(/@(here)/gi, "here");
   if (message.content.includes(`@`)) {
-    return message.channel.send(
+    return message.reply(
       `**:x: Please dont mention anyone while talking to me I feel attacked 😭**`
     );
   }
@@ -28,7 +31,16 @@ client.on("message", async message => {
     user: message.author.id,
     language: "auto"
   }).then(reply => {
-    message.reply(`${reply}`);
+    message.reply({
+      embed: {
+        color: "#5539cc",
+        description: `${reply}`,
+footer: {
+		text: '',
+		icon_url: 'https://i.imgur.com/wSTFkRM.png',
+	}
+      }
+    });
   });
   message.channel.stopTyping();
 });
