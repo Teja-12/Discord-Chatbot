@@ -1,9 +1,4 @@
 const { Client } = require("discord.js");
-var d = new Date(),
-  dformat =
-    [d.getMonth() + 1, d.getDate(), d.getFullYear()].join("/") +
-    " " +
-    [d.getHours(), d.getMinutes(), d.getSeconds()].join(":");
 const client = new Client({ intents: 513 });
 const smartestchatbot = require("smartestchatbot");
 var x = new smartestchatbot.Client();
@@ -29,16 +24,17 @@ client.on("message", async message => {
     name: client.user.username,
     owner: "Zero", // Add Owner Name Here
     user: message.author.id,
-    language: "auto"
+    language: "auto" // You can change the language here ( auto ) states it will detect your language and prepare a response in english for you
   }).then(reply => {
     message.reply({
       embed: {
+        title: "ChatBot",
         color: "#5539cc",
-        description: `${reply}`,
-footer: {
-		text: '',
-		icon_url: 'https://i.imgur.com/wSTFkRM.png',
-	}
+        description: `**${reply}**`,
+        timestamp: new Date(),
+        footer: {
+          text: `${client.user.username}`
+        }
       }
     });
   });

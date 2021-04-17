@@ -1,12 +1,14 @@
-# Updated 2nd April, 2021 
+# Updated 17th April, 2021 
 ## Update Logs 
-### • Bot Now Sends Response In Embeds 
+### • Inline replies added! 
+### • Bot Now Sends Response In Embeds / Better embeds than previous versions!
 ### • Bot Language Forced to English can be changed to any language! Join Support Server for help
+#### • Specified intents for bot to connect to the API websocket Bot Ready for future! (djs v13)
 **This chatbot was created by 0_0#6666** <br>
 _To set up your bot please head to .env and make a variable named ``TOKEN`` and add your token there!_ <br>
 **This bot is fully customisable join https://discord.gg/HEpHMPsUvC for support and other questions**
 
-Youtube Channel:         **https://www.youtube.com/channel/UCF9E-xef9jL9QgziZRDHKKQ/**
+Youtube Channel:         **https://www.youtube.com/c/ZeroSync**
 
 
 **NOTE
