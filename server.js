@@ -24,7 +24,7 @@ client.on("message", async message => {
     name: client.user.username,
     owner: "Zero", // Add Owner Name Here
     user: message.author.id,
-    language: "auto" // You can change the language here ( auto ) states it will detect your language and prepare a response in english for you
+    language: "en" // You can change the language here ( auto ) states it will detect your language and prepare a response in english for you
   }).then(reply => {
     message.reply({
       embed: {
