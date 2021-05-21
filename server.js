@@ -1,7 +1,7 @@
 const { Client } = require("discord.js");
 const client = new Client({ intents: 513 });
-const smartestchatbot = require("smartestchatbot");
-var x = new smartestchatbot.Client();
+const zero = require('chatbot-zero')
+var ai = new zero()
 client.on("ready", () => {
   console.log("Ready for chatting!| Bot by 0_0");
 });
@@ -19,7 +19,7 @@ client.on("message", async message => {
   message.channel.startTyping();
   if (!message.content)
     return message.channel.send("I can only reply to text messages");
-  x.chat({
+  ai.chat({
     message: message.content,
     name: client.user.username,
     owner: "Zero", // Add Owner Name Here

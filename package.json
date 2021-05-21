@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "discord.js": "discordjs/discord.js",
-    "smartestchatbot": "^1.0.5"
+    "smartestchatbot": "^1.0.5",
+    "chatbot-zero": "^1.0.1"
   },
   "engines": {
     "node": "14.x"
