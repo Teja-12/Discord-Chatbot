@@ -9,7 +9,7 @@
   "dependencies": {
     "discord.js": "discordjs/discord.js",
     "smartestchatbot": "^1.0.5",
-    "chatbot-zero": "^1.0.1-dev"
+    "chatbot-zero": "^1.0.2"
   },
   "engines": {
     "node": "14.x"
