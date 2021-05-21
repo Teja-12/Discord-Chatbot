@@ -8,7 +8,7 @@ client.on("ready", () => {
 client.on("message", async message => {
   // when client detects a message
   if (message.author.bot) return; // if the author of the message is a bot ignore the case
-  message.content = message.content // let content ( a variable used to fetch response ) be equal to the message's content
+  message.content = message.content
     .replace(/@(everyone)/gi, "everyone")
     .replace(/@(here)/gi, "here");
   if (message.content.includes(`@`)) {
@@ -37,7 +37,7 @@ client.on("message", async message => {
         }
       }
     });
-  })
+  });
   message.channel.stopTyping();
 });
 client.login(process.env.TOKEN); //login using the token
