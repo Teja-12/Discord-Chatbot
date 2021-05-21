@@ -1,6 +1,6 @@
 const { Client } = require("discord.js");
 const client = new Client({ intents: 513 });
-const zero = require("chatbot-zero");
+const  zero  = require("chatbot-zero");
 client.on("ready", () => {
   console.log("Ready for chatting!| Bot by 0_0");
 });

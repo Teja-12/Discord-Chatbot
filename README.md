@@ -2,7 +2,7 @@
 ## Update Logs 
 ### • Inline replies added! 
 ### • Bot Now Sends Response In Embeds / Better embeds than previous versions!
-### • Bot Language Forced to English can be changed to any language! Join Support Server for help
+### • Bot Dumb Again lol Join Support Server for help
 #### • Specified intents for bot to connect to the API websocket Bot Ready for future! (djs v13)
 **This chatbot was created by 0_0#6666** <br>
 _To set up your bot please head to .env and make a variable named ``TOKEN`` and add your token there!_ <br>
