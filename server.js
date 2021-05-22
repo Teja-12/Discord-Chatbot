@@ -1,6 +1,7 @@
 const { Client } = require("discord.js");
 const client = new Client({ intents: 513 });
-const  zero  = require("chatbot-zero");
+const smartestchatbot = require("smartestchatbot");
+const x = new smartestchatbot.Client();
 client.on("ready", () => {
   console.log("Ready for chatting!| Bot by 0_0");
 });
@@ -18,7 +19,13 @@ client.on("message", async message => {
   message.channel.startTyping();
   if (!message.content)
     return message.channel.send("I can only reply to text messages");
-  zero.responseFetch(message.content).then(reply => {
+  x.chat({
+    message: message.content,
+    name: client.user.username,
+    owner: "Zero",
+    user: message.author.id,
+    language: "en"
+  }).then(reply => {
     message.reply({
       embed: {
         title: "ChatBot",
@@ -32,6 +39,5 @@ client.on("message", async message => {
     });
   });
   message.channel.stopTyping();
-})
-
+});
 client.login(process.env.TOKEN); //login using the token
