@@ -32,5 +32,6 @@ client.on("message", async message => {
     });
   });
   message.channel.stopTyping();
-});
+})
+
 client.login(process.env.TOKEN); //login using the token
