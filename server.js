@@ -26,17 +26,7 @@ client.on("message", async message => {
     user: message.author.id,
     language: "en"
   }).then(reply => {
-    message.reply({
-      embed: {
-        title: "ChatBot",
-        color: "#5539cc",
-        description: `**${reply}**`,
-        timestamp: new Date(),
-        footer: {
-          text: `${client.user.username}`
-        }
-      }
-    });
+    message.reply(`${reply}`);
   });
   message.channel.stopTyping();
 });
