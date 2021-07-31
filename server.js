@@ -12,12 +12,16 @@ client.on("messageCreate", async message => {
     .replace(/@(everyone)/gi, "everyone")
     .replace(/@(here)/gi, "here");
   if (message.content.includes(`@`)) {
-    return message.reply(
-      `**:x: Please dont mention anyone while talking to me I feel attacked 😭**`
-    );
+    return message.reply({
+      content: `**:x: Please dont mention anyone while talking to me I feel attacked 😭**`,
+      ephemeral: true
+    });
   }
   if (!message.content)
-    return message.channel.send("I can only reply to text messages");
+    return message.reply({
+      content: "I can only reply to text messages",
+      ephemeral: true
+    });
   x.chat({
     message: message.content,
     name: client.user.username,
