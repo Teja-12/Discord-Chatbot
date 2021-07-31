@@ -16,7 +16,6 @@ client.on("messageCreate", async message => {
       `**:x: Please dont mention anyone while talking to me I feel attacked 😭**`
     );
   }
-  Client.typingStart();
   if (!message.content)
     return message.channel.send("I can only reply to text messages");
   x.chat({
@@ -26,8 +25,8 @@ client.on("messageCreate", async message => {
     user: message.author.id,
     language: "en"
   }).then(reply => {
+    message.channel.sendTyping();
     message.reply(`${reply}`);
   });
-  Client.typingStop();
 });
 client.login(process.env.TOKEN); //login using the token
