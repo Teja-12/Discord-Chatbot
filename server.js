@@ -5,7 +5,7 @@ const x = new smartestchatbot.Client();
 client.on("ready", () => {
   console.log("Ready for chatting!| Bot by 0_0");
 });
-client.on("message", async message => {
+client.on("messageCreate", async message => {
   // when client detects a message
   if (message.author.bot) return; // if the author of the message is a bot ignore the case
   message.content = message.content
@@ -16,7 +16,7 @@ client.on("message", async message => {
       `**:x: Please dont mention anyone while talking to me I feel attacked 😭**`
     );
   }
-  message.channel.startTyping();
+  Client.typingStart();
   if (!message.content)
     return message.channel.send("I can only reply to text messages");
   x.chat({
@@ -28,6 +28,6 @@ client.on("message", async message => {
   }).then(reply => {
     message.reply(`${reply}`);
   });
-  message.channel.stopTyping();
+  Client.typingStop();
 });
 client.login(process.env.TOKEN); //login using the token
