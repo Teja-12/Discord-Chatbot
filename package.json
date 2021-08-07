@@ -7,9 +7,9 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "discord.js": "discordjs/discord.js#dev",
     "chatbot-zero": "^1.1.0",
-    "smartestchatbot": "^2.0.0"
+    "smartestchatbot": "^2.0.0",
+    "discord.js": "^13.0.0"
   },
   "engines": {
     "node": "14.x"
