@@ -9,7 +9,8 @@
   "dependencies": {
     "chatbot-zero": "^1.1.0",
     "smartestchatbot": "^2.0.0",
-    "discord.js": "^13.0.0"
+    "discord.js": "^13.0.1",
+    "abortcontroller-polyfill": "^1.7.3"
   },
   "engines": {
     "node": "14.x"

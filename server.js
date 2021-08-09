@@ -1,4 +1,7 @@
 const { Client } = require("discord.js");
+const {
+  AbortController
+} = require("abortcontroller-polyfill/dist/cjs-ponyfill");
 const client = new Client({ intents: 513 });
 const smartestchatbot = require("smartestchatbot");
 const x = new smartestchatbot.Client();
@@ -34,3 +37,4 @@ client.on("messageCreate", async message => {
   });
 });
 client.login(process.env.TOKEN); //login using the token
+global.AbortController = AbortController;

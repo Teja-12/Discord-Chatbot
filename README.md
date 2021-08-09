@@ -1,6 +1,8 @@
-# Updated 19th April, 2021
+# Updated 09th August, 2021
 
 ## Update Logs
+
+## • Bot has been fully Upgraded to D.js v13! 
 
 ### • Inline replies added!
 
@@ -8,7 +10,7 @@
 
 ### • Join Support Server For Help , Cache memory from the API endpoint exists so it can remember users for a specific time period.
 
-#### • Specified intents for bot to connect to the API websocket Bot Ready for future! (djs v13)
+#### • Added polyfill abortcontroller dependency for djs v13 to work for node version below 13
 
 **This chatbot was created by 0_0#6666** <br>
 _To set up your bot please head to .env and make a variable named `TOKEN` and add your token there!_ <br>
