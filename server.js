@@ -1,7 +1,4 @@
 const { Client } = require("discord.js");
-const {
-  AbortController
-} = require("abortcontroller-polyfill/dist/cjs-ponyfill");
 const client = new Client({ intents: 513 });
 const smartestchatbot = require("smartestchatbot");
 const x = new smartestchatbot.Client();
@@ -15,13 +12,13 @@ client.on("messageCreate", async message => {
     .replace(/@(everyone)/gi, "everyone")
     .replace(/@(here)/gi, "here");
   if (message.content.includes(`@`)) {
-    return message.reply({
+    return message.member.send({
       content: `**:x: Please dont mention anyone while talking to me I feel attacked 😭**`,
       ephemeral: true
     });
   }
   if (!message.content)
-    return message.reply({
+    return message.member.send({
       content: "I can only reply to text messages",
       ephemeral: true
     });
@@ -37,4 +34,3 @@ client.on("messageCreate", async message => {
   });
 });
 client.login(process.env.TOKEN); //login using the token
-global.AbortController = AbortController;
